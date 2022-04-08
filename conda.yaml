@@ -1,0 +1,11 @@
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.10.4
+  - imageio=2.16.1
+  - matplotlib=3.5.1
+  - scipy=1.8.0
+  - pip=20.1
+  - pip:
+      - rpaframework-dialogs==1.1.0
