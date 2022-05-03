@@ -8,4 +8,4 @@ dependencies:
   - scipy=1.8.0
   - pip=20.1
   - pip:
-      - rpaframework-dialogs==1.1.0
+      - rpaframework-dialogs==2.0.0
