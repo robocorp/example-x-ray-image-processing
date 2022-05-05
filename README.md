@@ -27,25 +27,28 @@ dependencies:
   - scipy=1.8.0
   - pip=20.1
   - pip:
-      - rpaframework-dialogs==1.1.0
+      - rpaframework-dialogs==2.0.0
 ```
 
 ## The X-ray image operation dialog
 
 ```robot
 *** Settings ***
-Documentation     View X-ray images.
-...               Inspired by the original example at
-...               https://numpy.org/numpy-tutorials/content/tutorial-x-ray-image-processing.html
-Library           RPA.Dialogs
-Library           xray.py
+Documentation       View X-ray images.
+...                 Inspired by the original example at
+...                 https://numpy.org/numpy-tutorials/content/tutorial-x-ray-image-processing.html
+
+Library             RPA.Dialogs
+Library             xray.py
+
 
 *** Variables ***
-${OP_CANNY_FILTER}=    Canny filter
-${OP_GAUSSIAN_GRADIENT}=    Gaussian Gradient (edges)
-${OP_LAPLACIAN_GAUSSIAN}=    Laplacian Gaussian (edges)
-${OP_SOBEL_FELDMAN}=    Sobel-Feldman operator
-${OP_VIEW}=       View
+${OP_CANNY_FILTER}=             Canny filter
+${OP_GAUSSIAN_GRADIENT}=        Gaussian Gradient (edges)
+${OP_LAPLACIAN_GAUSSIAN}=       Laplacian Gaussian (edges)
+${OP_SOBEL_FELDMAN}=            Sobel-Feldman operator
+${OP_VIEW}=                     View
+
 
 *** Tasks ***
 View X-ray image
@@ -62,6 +65,7 @@ View X-ray image
         Display Sobel Feldman    ${image_path}
     END
 
+
 *** Keywords ***
 Select X-ray images and operation
     Add file input
@@ -69,7 +73,7 @@ Select X-ray images and operation
     ...    source=%{ROBOT_ROOT}${/}x-ray-images
     Add operation options
     ${result}=    Run dialog    title=X-ray Image Viewer
-    [Return]    ${result.xray_image}[0]    ${result.operation}
+    RETURN    ${result.xray_image}[0]    ${result.operation}
 
 Add operation options
     ${options}=
@@ -83,7 +87,6 @@ Add operation options
     ...    name=operation
     ...    options=${options}
     ...    default=${OP_VIEW}
-
 ```
 
 ## The X-ray processing library
