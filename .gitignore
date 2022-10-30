@@ -1,8 +1,6 @@
 output/
 venv/
 temp/
-images/*.png
-images/*.psd
 .rpa/
 .idea/
 .ipynb_checkpoints/
@@ -12,6 +10,11 @@ images/*.psd
 .vscode
 .DS_Store
 *.pyc
+*.zip
+*/work-items-out/*
+testrun/*
+.~lock*
+*.pkl
 *.zip
 */work-items-out/*
 testrun/*
