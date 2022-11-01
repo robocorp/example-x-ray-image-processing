@@ -2,10 +2,13 @@ channels:
   - conda-forge
 
 dependencies:
-  - python=3.10.4                   # https://pyreadiness.org/3.9/ 
+# Define conda-forge packages here -> https://anaconda.org/search
+# When available, prefer the conda-forge packages over pip as installations are more efficient.
+  - python=3.9.13                   # https://pyreadiness.org/3.9/ 
   - imageio=2.22.0                  # https://github.com/imageio/imageio/releases
   - matplotlib=3.6.1                # https://matplotlib.org/
   - scipy=1.9.3                     # https://scipy.org/
   - pip=22.3                        # https://pip.pypa.io/en/stable/news/
   - pip:
+# Define pip packages here -> https://pypi.org/
       - rpaframework-dialogs==4.0.0 # https://pypi.org/project/rpaframework-dialogs/#history

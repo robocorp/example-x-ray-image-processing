@@ -15,8 +15,3 @@ temp/
 testrun/*
 .~lock*
 *.pkl
-*.zip
-*/work-items-out/*
-testrun/*
-.~lock*
-*.pkl
