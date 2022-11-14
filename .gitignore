@@ -1,8 +1,6 @@
 output/
 venv/
 temp/
-images/*.png
-images/*.psd
 .rpa/
 .idea/
 .ipynb_checkpoints/
