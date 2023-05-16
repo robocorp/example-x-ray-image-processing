@@ -12,7 +12,7 @@ This example application reads and processes X-ray images with [NumPy](https://n
 
 This application was inspired by the original [NumPy tutorial - X-ray image processing](https://numpy.org/numpy-tutorials/content/tutorial-x-ray-image-processing.html).
 
-> This project uses a deprecated library [RPA.Dialogs] (https://robocorp.com/docs/libraries/rpa-framework/rpa-dialogs) that will be replaced with [RPA.Assitant](https://robocorp.com/docs/libraries/rpa-framework/rpa-assistant). You can find an example detailing the new library on [portal](https://robocorp.com/portal/robot/robocorp/template-assistant).
+> This project uses a deprecated library [RPA.Dialogs](https://robocorp.com/docs/libraries/rpa-framework/rpa-dialogs) that will be replaced with [RPA.Assistant](https://robocorp.com/docs/libraries/rpa-framework/rpa-assistant). You can find an example detailing the new library [here](https://robocorp.com/portal/robot/robocorp/template-assistant).
 
 ## Dependencies
 
